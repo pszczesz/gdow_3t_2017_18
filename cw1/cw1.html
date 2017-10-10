@@ -6,12 +6,24 @@
     </head>
     <body> 
         <h1>Ćwiczenie 1</h1>
-        <script type="text/javascript">            
+        <script type="text/javascript">
             document.write("<p>Witaj z JS</p>");
             var powitanie = "Witaj na stronie...";
             var imie = prompt("Podaj imię:");
-            console.log(powitanie+ "typu:" +typeof powitanie);
-            document.write("<p>"+powitanie+" "+imie+"</p>");
+            console.log(powitanie + "typu:" + typeof powitanie);
+            document.write("<p>" + powitanie + " " + imie + "</p>");
+            var wiek = parseInt(prompt("Podaj wiek:"));
+            if (isNaN(wiek)) {
+                document.write("<p>Błedny wiek!!!</p>");
+            } else {
+                if(wiek>=18){
+                    document.write("<p>Twój wiek to: " + wiek
+                            + ". Jesteś pełnoletni</p>");
+                }else{
+                    document.write("<p>Twój wiek to: " + wiek 
+                            + ". Jesteś niepełnoletni</p>");
+                }               
+            }
         </script>
     </body>
 </html>

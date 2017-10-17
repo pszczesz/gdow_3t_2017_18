@@ -9,6 +9,6 @@ function start(){
   var tekst = prompt("Podaj nową treść: ");
   pars[2].innerHTML = tekst;
   pars[3].style.color = "red";
-  pars[3].style.fontSize = "2em";
+  pars[3].style.fontSize = "24px";
 }
 

@@ -10,7 +10,7 @@ function zatwierdz() {
     var nazwisko = document.getElementById("nazwisko").value;
     var wiek = parseInt(document.getElementById("wiek").value);
     if (imie.trim() != "" && nazwisko.trim() != ""
-            && !isNaN(wiek)) {
+            && !isNaN(wiek) && wiek>0) {
         wynik.innerHTML = "Witaj " + imie + " " + nazwisko
                 + " twój wiek: " + wiek;
     } else {

@@ -1,0 +1,13 @@
+table{
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+th,td{
+    border: solid 1px black;
+    padding: 5px;
+}
+.wyr{
+    color: #ff9900;
+    background-color: #330000
+}

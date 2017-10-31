@@ -2,7 +2,8 @@
 <html>
     <head>
         <title>Ćwiczenie 8 tab w js</title>
-        <meta charset="UTF-8">        
+        <meta charset="UTF-8"> 
+        <link rel="stylesheet" href="cw8.css"/>
     </head>
     <body>
         <h1>Ćwiczenie 8 tab w js</h1>
@@ -11,6 +12,15 @@
             <input type="number" id="rows"/><br>
             Podaj ilość kulumn:
             <input type="number" id="cols"/><br>
+            Wybór koloru:
+            <select id="kolor">
+                <option value="black">czarny</option>
+                <option value="white">biały</option>
+                <option value="yellow">zółty</option>
+                <option value="red">czerwony</option>
+                <option value="grey">szary</option>
+                <option value="pink">różowy</option>
+            </select>
             <input type="button" id="generuj" value="Wyświetl"/>
         </div>
         <div id="wynik"></div>

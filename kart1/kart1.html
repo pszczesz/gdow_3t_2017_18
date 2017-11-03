@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <div>Kartkówka 1</div>
+        <h3>Zadanie 1</h3>
+        <script type="text/javascript">
+            var kolor = prompt("Podaj kolor:");
+            if(kolor.trim()!=''){
+                document.body.style.backgroundColor = kolor;
+            }else{
+                alert("Brak danych");
+            }
+        </script>
+        <h3>zadanie 2</h3>
+        Podaj liczbę:
+        <input type="text" id="liczba" />
+        <input type="button" value="Generuj" id="generuj"/>
+        <script type="text/javascript">
+            window.onload = start;
+            function start(){
+                document.getElementById("generuj").onclick = klik;
+            }
+            function klik(){
+                var liczba = parseInt(document.getElementById("liczba").value);
+                if(!isNaN(liczba) && liczba>0 && liczba<100){
+                    document.getElementById("wynik").innerHTML = Generuj(liczba);
+                }
+            }
+            function Generuj(liczba){
+                var html = "<ul>";
+                for(var i=0;i<liczba;i++){
+                    html += "<li>Element listy</li>";
+                }
+                return html+"</ul>";
+            }
+        </script>
+        <div id="wynik"></div>
+    </body>
+</html>

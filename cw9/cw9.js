@@ -2,9 +2,11 @@ window.onload = start;
 
 function start() {
     document.getElementById("zegar").innerHTML = "Zegar: " + UpdateTime();
-    var d = new Date('2017-11-23');
+    var d = new Date();
     var miesiac = GetMiesiac(d);
     var dTyg = GetDzien(d);
+    if(dTyg=="Niedziela") dTyg ="<span style='color:red'>Niedziela</span>";
+    if(dTyg=="Sobota") dTyg ="<span style='color:green'>Sobota</span>";
     document.getElementById("miesiac").innerHTML=miesiac;
     document.getElementById("dzien").innerHTML = d.getDate();
     document.getElementById("dTyg").innerHTML = dTyg;

@@ -3,3 +3,30 @@ div#zegar{
     color: green;
 }
 
+div#kartka{
+    margin: auto;
+    text-align: center;
+    border: solid 2px black;
+    padding: 10px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 10px 10px 5px #999999;
+}
+div#miesiac{
+    margin-top: 10px;
+    font-size: 25px;
+    color: blue;
+}
+div#dzien{
+    margin-top: 10px;
+    font-size: 130px;
+    font-weight: bold;
+}
+div#dTyg{
+    margin-top: 10px;
+    font-size: 36px;
+}
+div#rok{
+    margin-top: 10px;
+    font-size: 25px;
+}

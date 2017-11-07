@@ -1,10 +1,13 @@
 window.onload = start;
 
 function start(){
-   // document.getElementById("zegar").innerHTML = UpdateTime();
+    document.getElementById("zegar").innerHTML = "Zegar: "+UpdateTime();
 }
 function UpdateTime(){
     var dateTime = new Date();
-    console.log(dateTime.toTimeString());
+    //console.log(dateTime.toTimeString().split(' ')[0]);
+    return dateTime.toTimeString().split(' ')[0];
 }
-setInterval(UpdateTime,1000);
+setInterval(function(){
+    document.getElementById("zegar").innerHTML = "Zegar: "+UpdateTime();
+},1000);

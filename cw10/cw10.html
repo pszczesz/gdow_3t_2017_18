@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tablice w JS</title>
+        <meta charset="UTF-8">        
+    </head>
+    <body>
+        <h1>Tablice w JS</h1>
+        <script type="text/javascript">
+            var kolory = ["zielony","biały","żółty",1231,['dd',45,56.90]];
+            console.log(kolory);
+            console.log("Ilość elementów: "+kolory.length);
+            var tab2 = new Array(34,54,45,45,67,"dfsdfsd",true);
+            console.log(tab2);
+            for(var i=0;i<tab2.length;i++){
+                document.write("<p>Element tablicy o indeksie: "+i
+                        +" ma wartość: "+tab2[i]+"</p>");
+            }
+            document.write(tab2+"<br>");
+            document.write(tab2.sort());
+        </script>
+    </body>
+</html>

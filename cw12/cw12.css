@@ -1,0 +1,24 @@
+#last{
+    float: left;
+    width: 200px;
+    text-align: right;
+    margin-right: 10px;
+}
+#wynik{
+    float: left;
+    width: 100px;
+    padding: 4px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#oblicz{
+    padding: 5px;
+    margin-right: 20px;
+    width: 100px;
+}
+td.nazwa{
+    width: 200px;
+    text-align: right;
+}
+td.cena{text-align: right;font-weight: bold;width: 55px;}
+td input{ width: 40px;}

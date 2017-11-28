@@ -1,0 +1,25 @@
+h1{
+    margin: auto;
+    margin-bottom: 20px;
+    border-bottom: solid 2px grey;
+    padding-left: 50px;
+}
+div#gal{
+    margin: auto;
+    text-align: center;
+}
+img#obrazek{
+    margin: 0;
+    text-align: center;
+    border: solid thin #999999;
+}
+input[type=button]{
+    height: 300px;
+    vertical-align: bottom;
+    margin: 0;
+}
+#podpis{
+    margin: auto;
+    text-align: center;
+}
+

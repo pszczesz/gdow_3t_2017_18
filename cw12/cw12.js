@@ -9,7 +9,10 @@ function start() {
     function Oblicz() {
         var ilosci = [];
         for (var i = 0; i < dane.length; i++) {
-            ilosci.push(document.getElementById("il" + i).value);
+            var wartosc = document.getElementById("il" + i).value;
+            document.getElementById("il" + i).style.border = "solid thin black";
+            if(wartosc=="" || wartosc<0) document.getElementById("il" + i).style.border = "solid thin red";
+            ilosci.push(wartosc);
         }
         var total = 0;
         for (var i = 0; i < dane.length; i++) {

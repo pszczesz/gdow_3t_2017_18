@@ -1,0 +1,13 @@
+div.line{
+    margin: 10px;
+}
+span.error{
+    color: red;
+}
+span.tekst{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+input[type="button"]{ width: 230px; padding: 7px;}

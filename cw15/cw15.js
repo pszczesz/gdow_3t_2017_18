@@ -16,7 +16,7 @@ function toList(){
     var html = "<ul>";
     for(var i=0;i<prezenty.length;i++){
         html += "<li><input type='checkbox' value='"
-                +prezenty[i][0]+"'/>"+prezenty[i][0]+" w cenie: "
+                +prezenty[i][0]+"'  name='prezenty'/>"+prezenty[i][0]+" w cenie: "
              +prezenty[i][1]+ "zł</li>";
     }
     html += "</ul>";
@@ -27,6 +27,17 @@ function Pobierz(){
     document.getElementById("zatwierdz").style.display = "inline-block";
 }
 function Klik(){
-    document.getElementById("wynik").innerHTML = "Tu będą wybrane prezenty!!!";
+    var gifts = document.getElementsByName("prezenty");
+    console.log(gifts);
+    var html = "<ul>";
+    var suma=0;
+    for(var i=0;i<gifts.length;i++){
+        if(gifts[i].checked){
+            html += ("<li>"+prezenty[i][0]+ " w cenie: "+prezenty[i][1]+"zł </li>");
+            suma += prezenty[i][1];
+        }
+    }
+    html += "</ul><hr><p>Całkowita cena: "+suma+"zł</p>";
+    document.getElementById("wynik").innerHTML = html;
 }
 

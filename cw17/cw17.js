@@ -12,6 +12,7 @@ function klik(){
     }else{
          document.getElementById("wynik").innerHTML = "";
     }
+    document.getElementById("ht").style.borderColor = "green";
 }
 function GenerTab(rows, cols){
     return "TODO tableka o wymiarach: ("+rows+","+cols+")";
@@ -23,7 +24,8 @@ function Validate(element){
         element.nextElementSibling.innerHTML = "";
         return true;
     }else{
-        element.nextElementSibling.innerHTML = "Błędne dane!!!";
+        element.nextElementSibling.innerHTML = "Błędne\
+ dane!!!";
         return false;
     }
 }

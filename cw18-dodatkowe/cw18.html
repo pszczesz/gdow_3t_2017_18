@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#baner{border: solid thin black; padding: 20px;}
+		p{display: inline-block; border: solid green 2px; padding: 10px;margin: 20px 50px;
+			background-color: red; width: 30%;}
+		p:nth-child(even){color: grey;}
+		p:nth-child(odd){text-align: right;}
+		p:nth-child(3n+0){border: solid yellow 2px;}
+		p#piaty{float: right;}
+		p#szosty{display: inline;}
+		#kwadrat{background-color: red; height: 30px;width: 30px; position: relative; left: 250px;}
+		#kwadrat{animation-name: ruch; animation-duration: 4s;}
+		@keyframes ruch {
+		    from {left: 0px;}
+		    to {left: 250px;}
+		}
+	</style>
+</head>
+<body>
+<h1>Layout</h1>
+<div>
+	<div id="baner">BANER</div>
+	<div>
+		<p>Pierwszy paragraf</p>
+		<p>Drugi paragraf</p>
+		<p>Trzeci paragraf</p>
+		<p>Czwarty paragraf</p>
+	</div>
+	<p id="piaty">Piąty paragraf</p>
+	<p id="szosty">Szósty paragraf</p>
+	<p>Siódmy paragraf</p>
+	<p>Ósmy paragraf</p>
+   <div id="kwadrat"></div>
+</div>
+</body>
+</html>

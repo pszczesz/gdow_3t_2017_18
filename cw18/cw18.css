@@ -20,9 +20,14 @@ table{
     text-align: center;
 }
 td{
-    height: 12px;
-    width: 12px;
+    height: 20px;
+    width: 20px;
     border: solid 1px green;
+    cursor: pointer;
+    padding: 0;
+}
+img{
+    margin: 0;
 }
 span.error{color: red; font-weight: bold;}
 div#wynik{margin-top: 20px;}

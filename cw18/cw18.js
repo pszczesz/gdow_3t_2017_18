@@ -58,3 +58,11 @@ function Validate(elem) {
         return false;
     }
 }
+function dane(){
+    return [
+        ["Polska","Warszawa",36000000],
+        ["Polska","Warszawa",36000000],
+        ["Polska","Warszawa",36000000],
+        ["Polska","Warszawa",36000000],
+    ];
+}

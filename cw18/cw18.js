@@ -5,6 +5,8 @@ function start() {
 function gener() {
     var rowsOK = Validate(document.getElementById("rows"));
     var colsOK = Validate(document.getElementById("cols"));
+    var t=[12,23,4,546,6,7,67];
+    t.forEach(function(value){console.log(Math.pow(value,3));});
     if (rowsOK && colsOK) {
         var rows = parseInt(document.getElementById("rows").value);
         var cols = parseInt(document.getElementById("cols").value);

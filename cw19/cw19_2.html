@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Listy</title>
+        <meta charset="UTF-8">
+        <style>
+            ul{  padding: 10px;  }
+            li:not(:first-child){padding-left:20px;}
+            li:nth-child(2){color: red;}
+            li:first-child{text-decoration: underline;font-weight: bold;}
+        </style>
+    </head>
+    <body>
+        <h1>Listy</h1>
+        <div>
+            <ul>
+                <li>Jeden</li>
+                <li>Dwa</li>
+                <li>Trzy
+                    <ul>
+                        <li>wewnetrzna 1</li>
+                         <li>wewnetrzna 2</li>
+                          <li>wewnetrzna 3</li>
+                    </ul>
+                </li>
+                <li>
+                    Inna
+                    <ul style="list-style-type: square">
+                        <li>wewnetrzna 1</li>
+                         <li>wewnetrzna 2</li>
+                          <li>wewnetrzna 3</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

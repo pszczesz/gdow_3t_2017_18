@@ -9,7 +9,7 @@
             div#baner{height: 100px; background-color: gray; font-size: 4em; text-align: center; padding: 30px;}
             div#menu{margin: 0px; padding: 0px;}
             div#menu ul{margin: 0px; list-style: none; padding: 0px;}
-            div#menu ul li{
+            div#menu ul>li{
                 display: inline-block; width: 32.92%;
                 margin: 0px;
                 text-align: center;
@@ -19,7 +19,7 @@
                 cursor: pointer;
                 vertical-align: top;
             }
-            ul#pod1{
+            ul.pod1{
                 margin: 0px;
                 padding: 0px;
                 display: none;
@@ -29,12 +29,17 @@
             div#menu>ul>li:hover>ul{
                 display: block;
             }
-            ul#pod1>li{
+            ul.pod1>li{
                 display: block !important;                            
                 margin-left: 60px !important;
                 border: none!important;
+                width: 80%!important;
             }
-           
+            ul.pod1 li:hover{
+                background-color: #333333 !important;
+                width: 80%;
+                color: white;
+            }
         </style>
     </head>
     <body>
@@ -44,7 +49,7 @@
         <div id="menu">
             <ul>
                 <li>Home
-                    <ul id="pod1">
+                    <ul class="pod1">
                         <li>element 1</li>
                         <li>element 2</li>
                         <li>element 3</li>
@@ -52,7 +57,7 @@
                 </li>
                 <li>Informacje o firmie</li>
                 <li>Kotakt
-                <ul id="pod1">
+                <ul class="pod1">
                         <li>element 1</li>
                         <li>element 2</li>
                         <li>element 3</li>

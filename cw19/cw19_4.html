@@ -30,16 +30,25 @@
             div#menu>ul>li:hover>ul{
                 display: block;
             }
-            ul.pod1>li{
+            ul.pod1 li{
                 display: block !important;                            
-                margin-left: 60px !important;
+               
                 border: none!important;
-                width: 80%!important;
+                width: 100%!important;
             }
             ul.pod1 li:hover{
                 background-color: #333333 !important;
                 width: 80%;
                 color: white;
+            }
+            ul.pod1 li a{
+                text-decoration: none;
+                 color: black;
+                 display: inline-block;
+            }
+            ul.pod1 li a:hover{
+                 
+                 color: white;
             }
         </style>
     </head>
@@ -61,7 +70,7 @@
                 <ul class="pod1">
                         <li>element 1</li>
                         <li>element 2</li>
-                        <li>element 3</li>
+                        <li><a href="http://onet.pl" target="_blank">element 3</a></li>
                     </ul>
                 </li>
             </ul>

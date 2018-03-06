@@ -1,0 +1,26 @@
+h1{
+    margin: auto;
+    border-bottom: solid 1px green;
+    width: 60%;
+    color: #003300;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#lewy{
+    margin-top: 40px;
+    float: left;
+    width: 50%;    
+}
+#content{
+    float: left;
+    width: 45%;
+    margin-left: 20px;
+}
+.error{color: red;}
+div.line{margin-bottom: 10px;}
+label{text-align: right; width: 120px;display: inline-block;}
+#dolny{  
+    text-align: center;
+    clear: both;
+}
+#oblicz{width: 250px; padding: 10px;  margin-top: 20px;}

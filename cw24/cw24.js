@@ -56,7 +56,7 @@ function GetResult(textInputs,radioInputs){
             var suma = 0;
             oceny.forEach(function(item){
                 suma += item;
-            })
+            });
             result = "Wartość średnia: "+suma/oceny.length;
             break;            
         default:

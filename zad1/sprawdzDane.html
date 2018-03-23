@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Miernik jakości hasła</title>
+        <meta charset="UTF-8">        
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <style>
+            .error{color: red;}
+            .line{margin: 10px;}
+            label{display: inline-block; width: 150px; text-align: right;}
+            #form{
+                text-align: left;
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div id="baner">
+                <h1><a href="index.html">Sprawdź swoje hasło</a></h1>
+            </div>
+            <div id="panel_lewy">
+                <h2>Wybierz</h2>
+                <ol>
+                    <li><a href="haslo.html">Sprawdź hasło</a></li>
+                    <li><a href="zasady.html">Zasady tworzenia hasła</a></li>
+                    <li><a href="sprawdzDane.html">Sprawdzanie Danych</a></li>
+                </ol>
+            </div>
+            <div id="panel_prawy">
+                <div id="form">
+                    <div class="line">
+                        <label for="imie">Podaj imię: </label>
+                        <input type="text" id="imie" placeholder="Aaaaa">
+                        <span class="error"></span>
+                    </div>
+                    <div class="line">
+                        <label for="nazwisko">Podaj imię: </label>
+                        <input type="text" id="nazwisko" placeholder="Aaaaa">
+                        <span class="error"></span>
+                    </div>
+                    <div class="line">
+                        <label for="kod">Podaj kod pocztowy: </label>
+                        <input type="text" id="kod" placeholder="99-999">
+                        <span class="error"></span>
+                    </div>
+                    <div class="line">
+                        <input type="button" id="wykonaj" value="Sprawdź"/>
+                    </div>
+                </div>
+            </div>
+            <div id="stopka"><h3>Miernik jakości hasła</h3>
+                <p>Stronę opracował: 0000000003</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="sprawdz.js"></script>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Właściwość position</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+           
+            @keyframes wysun {
+                from {left: -150px; opacity:0}
+                to {left: 20px;opacity:1;}
+            }
+             @keyframes wsun {
+                from {left: 20px; opacity:1}
+                to {left: -150px;opacity:0;}
+            }
+            #kontener{
+               
+                position: fixed;
+                top:50px;
+                left: 0;
+                width: 200px;
+                height: 130px;
+                border: solid 1px green;
+                z-index: 2;
+            }
+           
+            .show{
+                 background-color: green;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                height: 100px;
+                width: 150px;
+                animation-name: wysun;
+                animation-duration: 1s;
+               
+            }
+            .hide{
+                 background-color: green;
+                position: absolute;
+                top: 20px;
+                left: -150px;
+                height: 100px;
+                width: 150px;
+                animation-name: wsun;
+                animation-duration: 1s;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div id="kontener">
+            <div id="okienko" class="hide">To powinno się wysunąć z boku</div>
+        </div>
+        <p>
+            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+        </p>
+        <p>
+            Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. In convallis tellus a mauris. Curabitur non elit ut libero tristique sodales. Mauris a lacus. Donec mattis semper leo. In hac habitasse platea dictumst. Vivamus facilisis diam at odio. Mauris dictum, nisi eget consequat elementum, lacus ligula molestie metus, non feugiat orci magna ac sem. Donec turpis. Donec vitae metus. Morbi tristique neque eu mauris. Quisque gravida ipsum non sapien. Proin turpis lacus, scelerisque vitae, elementum at, lobortis ac, quam. Aliquam dictum eleifend risus. In hac habitasse platea dictumst. Etiam sit amet diam. Suspendisse odio. Suspendisse nunc. In semper bibendum libero.
+        </p>
+        <p>
+            Proin nonummy, lacus eget pulvinar lacinia, pede felis dignissim leo, vitae tristique magna lacus sit amet eros. Nullam ornare. Praesent odio ligula, dapibus sed, tincidunt eget, dictum ac, nibh. Nam quis lacus. Nunc eleifend molestie velit. Morbi lobortis quam eu velit. Donec euismod vestibulum massa. Donec non lectus. Aliquam commodo lacus sit amet nulla. Cras dignissim elit et augue. Nullam non diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Aenean vestibulum. Sed lobortis elit quis lectus. Nunc sed lacus at augue bibendum dapibus.
+        </p>
+        <script type="text/javascript">
+            var elem = document.getElementById("okienko");
+            window.onload = function () {
+                document.getElementById("kontener").onmouseover = function () {
+                    document.getElementById("okienko").className = "show";
+                    console.log("show");
+                   console.log(elem.style);
+                };
+                document.getElementById("kontener").onmouseout = function () {
+                    document.getElementById("okienko").className = "hide";
+                    console.log("hide");
+                    console.log(elem.className);
+                };
+            };
+        </script>
+    </body>
+</html>

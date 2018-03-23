@@ -1,0 +1,38 @@
+body{
+    margin-left: 15px;
+}
+#pojemnik{    
+    position: fixed;
+    top:150px;
+    left:0px;
+   
+    width: 180px;
+    height: 100px;   
+   
+}
+
+.show{
+    position: absolute;
+    background-color: #999999;
+    padding: 5px;
+     width: 150px;
+    animation-name: pokaz;
+    animation-duration: 1s;
+}
+.hide{
+    position: absolute;
+    background-color: #999999;
+    padding: 5px;
+     width: 150px;
+    left:-165px; 
+    animation-name: ukryj;
+    animation-duration: 1s;
+}
+@keyframes pokaz{
+    from{left:-165px;opacity:0;}
+    to{left:0;opacity:1;}
+}
+@keyframes ukryj{
+    from{left:0;opacity:1;}
+    to{left:-165px;opacity:0;}
+}

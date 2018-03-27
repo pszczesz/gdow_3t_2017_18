@@ -12,8 +12,7 @@ window.onload = function () {
     setInterval(function () {
         var losowa = Math.floor(Math.random() * sentencje.length);
         var elem = document.getElementById("sentencje");
-        elem.innerHTML = sentencje[losowa];
-       
+        elem.innerHTML = sentencje[losowa];       
     }, 3000);
     GetDays('2018-04-01');
     function GetDays(date) {

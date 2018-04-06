@@ -1,6 +1,5 @@
 body{
-    background-color: #bdcedc;
-   
+    background-color: #bdcedc;   
 }
 #wraper{
     width: 900px;
@@ -12,9 +11,9 @@ body{
 }
 #baner{
     margin: auto;
-   background-image: url("imgs/zawody.png");
-   height: 200px;
-   width: 900px;
+    background-image: url("imgs/zawody.png");
+    height: 200px;
+    width: 900px;
 }
 table{
     margin: 20px;

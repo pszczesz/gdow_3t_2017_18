@@ -1,0 +1,53 @@
+body{
+    background-color: #bdcedc;
+   
+}
+#wraper{
+    width: 900px;
+    margin: auto;
+    text-align: center;
+}
+#form{
+    margin-top: 20px;
+}
+#baner{
+    margin: auto;
+   background-image: url("imgs/zawody.png");
+   height: 200px;
+   width: 900px;
+}
+table{
+    margin: 20px;
+    border-collapse: collapse;
+    width: 80%;
+}
+th{
+    background-color: #999999;
+    color: white;
+}
+td,th{
+    border: solid 1px black;
+}
+#lewy{
+    float: left;
+    width: 60%;
+}
+#prawy{
+    float: left;
+    width: 40%;
+}
+.line{
+    margin: 10px;
+}
+label{
+    text-align: right;
+    display: inline-block;
+    width: 100px;
+}
+input[type="button"]{
+    padding: 8px;
+    background-color: #cccccc;
+    color:black;
+    width: 250px;
+    margin-right: 5px;
+}

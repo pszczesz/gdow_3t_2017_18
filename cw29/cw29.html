@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Ćwiczenie 29 - obiekty</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Ćwiczenie 29 - obiekty</h1>
+        <script type="text/javascript">
+            var ob1 = {};
+            console.log(ob1);
+            ob1.pole1 = "Wartość pola pierwszrgo";
+            console.log(ob1);
+            ob1.pole2 = 455;
+            console.log(ob1);
+            ob1.show = function () {
+                return "pole1: " + this.pole1 + " pole2: " + this.pole2;
+            };
+            console.log(ob1.show());
+            var k1 = {
+                promien: 1,
+                obwod: function () {
+                    return 2 * Math.PI * this.promien;
+                },
+                pole: function () {
+                    return Math.PI * this.promien * this.promien;
+                },
+                show: function () {
+                    return "Koło o promieniu: " + this.promien + " obwód: "
+                            + this.obwod() + " pole: " + this.pole();
+                }
+            };
+            console.log(k1.show());
+            function Kwadrat(bok){
+                this.bok = bok;
+                this.obwod = function (){return 4*this.bok;};
+                this.pole = function (){return this.bok*this.bok;};
+            }
+            var kw1 = new Kwadrat(2);
+            console.log("obwód kwadratu: "+kw1.obwod());
+            var kw2 = new Kwadrat(1.1);
+            console.log("obwód kwadratu: "+kw2.obwod()+" a pole: "+kw2.pole().toFixed(2));
+        </script>
+    </body>
+</html>

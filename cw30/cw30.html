@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <div>
+            <label for="a">Podaj bok a: </label>
+            <input type="number" id="a" /> <br>
+            <label for="b">Podaj bok b: </label>
+            <input type="number" id="b" /> <br>
+            <input type="button" value="Utwórz prostokąt" id="gener"/>
+            <input type="button" value="Pokaż pole:" 
+                   id="pole" style="visibility: hidden"/>
+            <input type="button" value="Pokaż obwód: " 
+                   id="obwod" style="visibility: hidden"/>
+        </div>
+        <script type="text/javascript" >
+            function Prostokat(a,b){
+                this.a = a;
+                this.b = b;
+                this.obwod = function() { return (this.a+this.b)*2; };
+                //.....
+            }
+            var p1 = new Prostokat(parseFloat(document.getElementById("a"))
+                        ,parseFloat(document.getElementById("b")));,
+        </script>
+    </body>
+</html>

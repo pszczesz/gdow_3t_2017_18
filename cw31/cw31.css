@@ -1,0 +1,11 @@
+
+input[type="text"]{
+    width: 25px;
+}
+input[type="button"]{
+    width: 100px;
+    margin: 10px;
+}
+div#wybor{
+    margin: 10px;
+}

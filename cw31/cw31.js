@@ -29,7 +29,11 @@ function Horner(wsp, x) {
     this.wsp = wsp;
     this.x = x;
     this.oblicz = function () {
-        return "To trza zrobić!!!..."
+        var wynik = this.wsp[0];
+        for(var i=1;i<this.wsp.length;i++){
+            wynik = wynik*this.x+this.wsp[i];
+        }
+        return wynik;
     };
 }
 function generHtml(n) {

@@ -3,9 +3,8 @@ window.onload = function () {
         var wyb = document.getElementById("news").checked;
         var ilosc = parseInt(document.getElementById("ilosc").value);
         var wynik = "";
-        if (!isNaN(ilosc) && ilosc > 0) {//           
-            var bonus = wyb ? 0.2 : 0;
-            
+        if (!isNaN(ilosc) && ilosc > 0) {          
+            var bonus = wyb ? 0.2 : 0;            
             if (ilosc > 0 && ilosc <= 10) {
                wynik = (1 * ilosc - (bonus * ilosc)).toFixed(2);
             } else if (ilosc <= 50) {
